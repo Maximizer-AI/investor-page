@@ -1,0 +1,21 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/investor.html"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/investor.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/logo.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,112 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximizer AI — Investor Information</title>
-    <meta name="description" content="Maximizer AI investor one-pager">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>M</text></svg>">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; width: 100%; overflow: hidden; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-        }
-        .pdf-viewer {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 24px;
-            background: #111;
-            border-bottom: 1px solid #222;
-            flex-shrink: 0;
-        }
-        .logo {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        .logo span { color: #6366f1; }
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 20px;
-            background: #6366f1;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-        .download-btn:hover { background: #4f46e5; }
-        .embed-container {
-            flex: 1;
-            min-height: 0;
-        }
-        .embed-container iframe,
-        .embed-container embed,
-        .embed-container object {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .fallback {
-            display: none;
-            flex: 1;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
-        }
-        .fallback p {
-            color: #999;
-            margin-bottom: 24px;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=investor.html">
+  <title>Maximizer AI</title>
+  <link rel="canonical" href="investor.html">
 </head>
 <body>
-    <div class="pdf-viewer">
-        <div class="header">
-            <div class="logo">Maximizer <span>AI</span></div>
-            <a href="maximizer-one-pager.pdf" download="maximizer-one-pager.pdf" class="download-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v9m0 0l-3-3m3 3l3-3M2 12v1.5a1 1 0 001 1h10a1 1 0 001-1V12"/></svg>
-                Download PDF
-            </a>
-        </div>
-        <div class="embed-container" id="embed-container">
-            <iframe src="maximizer-one-pager.pdf?v=__CACHE_BUST__" title="Maximizer AI One-Pager"></iframe>
-        </div>
-        <div class="fallback" id="fallback">
-            <div>
-                <p>Your browser doesn't support embedded PDFs.</p>
-                <a href="maximizer-one-pager.pdf" download="maximizer-one-pager.pdf" class="download-btn">Download PDF</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        // Fallback for mobile browsers that can't embed PDFs
-        const iframe = document.querySelector('iframe');
-        iframe.onerror = function() {
-            document.getElementById('embed-container').style.display = 'none';
-            document.getElementById('fallback').style.display = 'flex';
-        };
-        // On mobile, just link directly to the PDF
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-            document.getElementById('embed-container').style.display = 'none';
-            document.getElementById('fallback').style.display = 'flex';
-        }
-    </script>
+  <a href="investor.html">Loading Maximizer AI investor overview…</a>
 </body>
 </html>

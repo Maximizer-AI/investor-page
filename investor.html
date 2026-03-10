@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Maximizer AI — The Active Intelligence Layer stopping insurance fraud and leakage in real time. Pre-Seed 2026.">
+<title>Maximizer AI · Investor Overview</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231a2057'/><path d='M8 23V9L16 17L24 9V23' stroke='rgba(255,255,255,0.92)' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='16' cy='17' r='2.8' fill='%2300c4b4'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap"></noscript>
+<style>
+/* ── TOKENS ──────────────────────────────────── */
+:root {
+  --navy:        #1a2057;
+  --navy-dark:   #101535;
+  --navy-mid:    #232c70;
+  --teal:        #00c4b4;
+  --teal-dim:    rgba(0,196,180,0.12);
+  --teal-glow:   rgba(0,196,180,0.18);
+  --white:       #ffffff;
+  --bg:          #f5f8fc;
+  --bg-alt:      #eef1f7;
+  --ink:         #0f172a;
+  --mid:         #374151;
+  --soft:        #6b7280;
+  --rule:        #e5e7eb;
+  --card:        #ffffff;
+  --green:       #10b981;
+  --amber:       #f59e0b;
+  --blue:        #3b82f6;
+  --purple:      #8b5cf6;
+  --text-bright: rgba(255,255,255,0.85);
+  --avatar-sec:  #2d3748;
+  --kpi-green:   #34d399;
+  --kpi-amber:   #fbbf24;
+  --r:           8px;
+  --r-lg:        14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── NAV ─────────────────────────────────────── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(16,21,53,0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,196,180,0.18);
+  padding: 0 6%;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.nav-logo {
+  height: 36px; width: auto;
+  flex-shrink: 0; display: block;
+}
+.hero-logo {
+  height: 64px; width: auto;
+  display: block; margin-bottom: 24px;
+}
+
+/* ── ACCESSIBILITY ───────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .badge-dot { animation: none; opacity: 1; }
+  .cap-card, .cap-card::before,
+  .team-card, .btn-primary, .btn-ghost,
+  .traction-row { transition: none; }
+}
+.nav-name { font-family: 'DM Serif Display', serif; font-size: 17px; color: white; }
+.nav-links { display: flex; align-items: center; gap: 24px; }
+.nav-links a {
+  font-size: 12.5px; color: rgba(255,255,255,0.55);
+  text-decoration: none; transition: color 0.2s;
+  letter-spacing: 0.2px;
+}
+.nav-links a:hover { color: var(--teal); }
+.nav-links .nav-cta {
+  background: var(--teal); color: var(--navy);
+  font-weight: 600; padding: 8px 18px;
+  border-radius: var(--r); font-size: 12.5px;
+  transition: opacity 0.2s;
+}
+.nav-links .nav-cta:hover { opacity: 0.88; }
+
+/* ── HERO ────────────────────────────────────── */
+.hero {
+  background: var(--navy);
+  background-image:
+    radial-gradient(ellipse at 90% 10%, rgba(0,196,180,0.16) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 90%, rgba(0,196,180,0.08) 0%, transparent 55%);
+  padding: 88px 6% 80px;
+}
+.hero-inner { max-width: 1000px; margin: 0 auto; }
+.badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,196,180,0.28);
+  border-radius: 20px; padding: 5px 14px;
+  font-size: 12px; color: rgba(255,255,255,0.72);
+  letter-spacing: 0.3px;
+}
+.badge-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--teal);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50% { opacity:0.5; transform:scale(0.8); }
+}
+.hero-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(38px, 5.5vw, 62px);
+  color: white; line-height: 1.12;
+  letter-spacing: -1.5px; max-width: 720px;
+  margin-bottom: 20px;
+}
+.hero-heading .accent { color: var(--teal); }
+.hero-sub {
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: rgba(255,255,255,0.58); max-width: 560px;
+  margin-bottom: 44px; line-height: 1.65;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--teal); color: var(--navy);
+  font-weight: 600; font-size: 14px;
+  padding: 14px 28px; border-radius: var(--r);
+  text-decoration: none; transition: opacity 0.2s;
+  letter-spacing: 0.2px;
+}
+.btn-primary:hover { opacity: 0.88; }
+.btn-ghost {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.82);
+  font-weight: 500; font-size: 14px;
+  padding: 14px 28px; border-radius: var(--r);
+  text-decoration: none; transition: background 0.2s;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.11); }
+
+/* ── KPI STRIP ───────────────────────────────── */
+.kpi-strip {
+  background: var(--navy-dark);
+  border-bottom: 1px solid rgba(0,196,180,0.14);
+}
+.kpi-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4,1fr);
+}
+.kpi {
+  padding: 26px 28px;
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+.kpi:last-child { border-right: none; }
+.kpi-val {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px; color: white;
+  letter-spacing: -0.5px; line-height: 1;
+}
+.kpi-val.teal  { color: var(--teal); }
+.kpi-val.green { color: var(--kpi-green); }
+.kpi-val.amber { color: var(--kpi-amber); }
+.kpi-label {
+  font-size: 11px; color: rgba(255,255,255,0.4);
+  text-transform: uppercase; letter-spacing: 0.8px; margin-top: 7px;
+}
+
+/* ── SECTION WRAPPER ─────────────────────────── */
+.s { padding: 80px 6%; }
+.s.alt  { background: var(--bg-alt); }
+.s.white{ background: var(--white); }
+.s.dark { background: var(--navy); }
+.s-inner { max-width: 1000px; margin: 0 auto; }
+.eyebrow {
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.4px;
+  color: var(--teal); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::after {
+  content:''; height:1px; width:32px;
+  background: var(--teal); opacity: 0.45;
+}
+.s-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(26px, 3.2vw, 38px);
+  color: var(--ink); font-weight: 400;
+  line-height: 1.22; margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+.s-title.light { color: white; }
+.s-desc {
+  font-size: 15px; color: var(--soft);
+  max-width: 560px; line-height: 1.7;
+}
+.s-desc.light { color: rgba(255,255,255,0.55); }
+
+/* ── PROBLEM ─────────────────────────────────── */
+.problem-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 20px; margin-top: 40px;
+}
+.problem-card {
+  background: var(--navy);
+  border-radius: var(--r-lg); padding: 40px 36px;
+  position: relative; overflow: hidden;
+}
+.problem-card::before {
+  content:''; position:absolute;
+  top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+}
+.problem-card::after {
+  content:''; position:absolute;
+  bottom:-60px; right:-60px;
+  width:180px; height:180px; border-radius:50%;
+  background: radial-gradient(circle, rgba(0,196,180,0.07) 0%, transparent 70%);
+}
+.problem-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(44px, 5vw, 64px);
+  color: var(--teal); letter-spacing: -3px; line-height: 1;
+  margin-bottom: 12px;
+}
+.problem-desc { font-size: 14.5px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.problem-note {
+  margin-top: 20px; padding: 20px 24px;
+  background: var(--navy); border-radius: var(--r);
+  border-left: 3px solid var(--teal);
+}
+.problem-note p {
+  font-size: 14.5px; color: rgba(255,255,255,0.65);
+  font-style: italic; line-height: 1.65;
+}
+
+/* ── CAPABILITIES ────────────────────────────── */
+.cap-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 18px; margin-top: 44px;
+}
+.cap-card {
+  background: var(--card);
+  border: 1px solid var(--rule); border-radius: var(--r-lg);
+  padding: 28px 24px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.cap-card::before {
+  content:''; position:absolute;
+  top:0; left:0; right:0; height:3px;
+  background: var(--teal); transform:scaleX(0);
+  transform-origin: left; transition: transform 0.25s;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+}
+.cap-card:hover {
+  box-shadow: 0 8px 36px rgba(0,0,0,0.09);
+  border-color: rgba(0,196,180,0.3);
+}
+.cap-card:hover::before { transform:scaleX(1); }
+.cap-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; margin-bottom: 16px;
+}
+.ci-teal   { background: rgba(0,196,180,0.1); }
+.ci-blue   { background: #dbeafe; }
+.ci-purple { background: #ede9fe; }
+.ci-amber  { background: #fef3c7; }
+.ci-green  { background: #d1fae5; }
+.ci-red    { background: #fee2e2; }
+.cap-title { font-size: 14.5px; font-weight: 600; color: var(--ink); margin-bottom: 8px; line-height: 1.3; }
+.cap-desc  { font-size: 12.5px; color: var(--soft); line-height: 1.65; }
+
+/* ── TRACTION ────────────────────────────────── */
+.traction-list {
+  margin-top: 40px;
+  border: 1px solid var(--rule); border-radius: var(--r-lg);
+  overflow: hidden; background: var(--card);
+}
+.traction-row {
+  display: flex; align-items: flex-start; gap: 18px;
+  padding: 22px 28px;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.15s;
+}
+.traction-row:last-child { border-bottom: none; }
+.traction-row:hover { background: var(--bg); }
+.tr-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  flex-shrink: 0; margin-top: 4px;
+}
+.tr-dot.live     { background: var(--green);  box-shadow:0 0 0 3px rgba(16,185,129,0.18); }
+.tr-dot.poc      { background: var(--teal);   box-shadow:0 0 0 3px rgba(0,196,180,0.18); }
+.tr-dot.nda      { background: var(--amber);  box-shadow:0 0 0 3px rgba(245,158,11,0.18); }
+.tr-dot.pipeline { background: var(--blue);   box-shadow:0 0 0 3px rgba(59,130,246,0.18); }
+.tr-dot.insight  { background: var(--purple); box-shadow:0 0 0 3px rgba(139,92,246,0.18); }
+.tr-content { flex: 1; }
+.tr-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.tr-detail { font-size: 13px; color: var(--soft); line-height: 1.5; }
+.tr-tag {
+  font-size: 11px; font-weight: 600;
+  padding: 4px 10px; border-radius: 20px;
+  white-space: nowrap; flex-shrink: 0;
+}
+.tag-green  { background:#d1fae5; color:#065f46; }
+.tag-teal   { background:rgba(0,196,180,0.1); color:#0a7570; }
+.tag-amber  { background:#fef3c7; color:#92400e; }
+.tag-blue   { background:#dbeafe; color:#1e40af; }
+.tag-purple { background:#ede9fe; color:#5b21b6; }
+
+/* ── MARKET ──────────────────────────────────── */
+.market-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 40px; margin-top: 44px; align-items: start;
+}
+.market-big {
+  background: var(--navy); border-radius: var(--r-lg);
+  padding: 36px; text-align: center; margin-bottom: 18px;
+}
+.market-big .mn {
+  font-family:'DM Serif Display',serif;
+  font-size: clamp(52px,6vw,72px);
+  color: var(--teal); letter-spacing:-3px; line-height:1;
+}
+.market-big .ml {
+  font-size:12.5px; color:rgba(255,255,255,0.45);
+  margin-top:10px; text-transform:uppercase; letter-spacing:0.8px;
+}
+.market-bar-row {
+  display:flex; align-items:center; gap:14px;
+  padding:16px 20px; background:var(--card);
+  border:1px solid var(--rule); border-radius:var(--r);
+  margin-bottom:10px;
+}
+.market-bar-row:last-child { margin-bottom:0; }
+.mbt { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--soft); width:32px; flex-shrink:0; }
+.mbw, .fund-bar-wrap { flex:1; height:6px; background:var(--rule); border-radius:3px; overflow:hidden; }
+.mbb, .fund-bar-fill { height:100%; border-radius:3px; }
+.mbb-tam { background:linear-gradient(90deg,var(--teal),var(--blue)); }
+.mbb-sam { background:var(--teal); }
+.mbb-som { background:var(--green); }
+.text-bright { color: var(--text-bright); }
+.mbv { font-family:'DM Serif Display',serif; font-size:16px; color:var(--ink); min-width:52px; text-align:right; }
+.market-stats {
+  display:grid; grid-template-columns:1fr 1fr; gap:14px;
+}
+.ms-card {
+  background:var(--card); border:1px solid var(--rule);
+  border-radius:var(--r); padding:22px 18px; text-align:center;
+}
+.ms-card.hl { border-color:rgba(0,196,180,0.3); }
+.msv { font-family:'DM Serif Display',serif; font-size:32px; color:var(--ink); letter-spacing:-1px; }
+.ms-card.hl .msv { color:var(--teal); }
+.msl { font-size:12px; color:var(--soft); margin-top:5px; line-height:1.4; }
+.market-note {
+  margin-top:18px; padding:20px 22px;
+  background:var(--navy); border-radius:var(--r);
+}
+.market-note p {
+  font-size:13px; color:rgba(255,255,255,0.52); line-height:1.65;
+}
+.market-note strong { color:white; }
+
+/* ── VISION ──────────────────────────────────── */
+.vision-grid {
+  display:grid; grid-template-columns:1fr auto 1fr;
+  margin-top:44px; align-items:stretch;
+}
+.vision-card {
+  border-radius:var(--r-lg); padding:36px 32px;
+}
+.vision-card.today {
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+}
+.vision-card.future {
+  background:rgba(0,196,180,0.09);
+  border:1px solid rgba(0,196,180,0.3);
+}
+.v-label {
+  font-size:11px; font-weight:600; text-transform:uppercase;
+  letter-spacing:1.2px; color:var(--teal); margin-bottom:14px;
+}
+.v-title {
+  font-family:'DM Serif Display',serif;
+  font-size:22px; color:white; margin-bottom:18px; line-height:1.28;
+}
+.v-list { list-style:none; display:flex; flex-direction:column; gap:9px; }
+.v-list li {
+  font-size:13.5px; color:rgba(255,255,255,0.6);
+  display:flex; align-items:flex-start; gap:9px; line-height:1.5;
+}
+.v-list li::before { content:'→'; color:var(--teal); flex-shrink:0; }
+.vision-arrow {
+  display:flex; align-items:center; justify-content:center;
+  padding:0 28px; font-size:28px;
+  color:rgba(0,196,180,0.35);
+}
+.vision-foot {
+  text-align:center; margin-top:28px;
+  font-style:italic; font-size:13.5px;
+  color:rgba(255,255,255,0.38);
+}
+
+/* ── MOATS ───────────────────────────────────── */
+.moat-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:18px; margin-top:40px;
+}
+.moat-card {
+  background:var(--card); border:1px solid var(--rule);
+  border-radius:var(--r-lg); padding:28px 24px;
+}
+.moat-icon { font-size:22px; margin-bottom:14px; display:block; }
+.moat-title { font-size:14px; font-weight:600; color:var(--ink); margin-bottom:8px; }
+.moat-desc { font-size:13px; color:var(--soft); line-height:1.65; }
+
+/* ── TEAM ────────────────────────────────────── */
+.team-main {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:18px; margin-top:40px;
+}
+.team-support {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:18px; margin-top:18px;
+}
+.team-card {
+  background:var(--card); border:1px solid var(--rule);
+  border-radius:var(--r-lg); padding:24px 20px; text-align:center;
+  transition:box-shadow 0.2s;
+}
+.team-card:hover { box-shadow:0 6px 28px rgba(0,0,0,0.07); }
+.avatar {
+  width:52px; height:52px; border-radius:12px;
+  background:var(--navy); color:white;
+  font-family:'DM Serif Display',serif; font-size:17px;
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 14px;
+}
+.avatar.sec { background: var(--avatar-sec); }
+.tm-name { font-size:14px; font-weight:600; color:var(--ink); margin-bottom:4px; }
+.tm-role {
+  font-size:11px; color:var(--teal); font-weight:600;
+  text-transform:uppercase; letter-spacing:0.5px; margin-bottom:9px;
+}
+.tm-bio { font-size:12px; color:var(--soft); line-height:1.55; }
+
+/* ── RAISE ───────────────────────────────────── */
+.raise-layout {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:32px; margin-top:44px; align-items:start;
+}
+.raise-card {
+  background:var(--card); border:1px solid var(--rule);
+  border-radius:var(--r-lg); padding:32px;
+}
+.raise-card h3 {
+  font-family:'DM Serif Display',serif;
+  font-size:20px; color:var(--ink);
+  margin-bottom:22px; font-weight:400;
+}
+.fund-list { display:flex; flex-direction:column; gap:14px; }
+.fund-item { display:flex; align-items:center; gap:14px; }
+.fund-name { font-size:13px; color:var(--mid); width:190px; flex-shrink:0; }
+.fund-bar-fill { background:var(--teal); }
+.fund-pct { font-size:13px; font-weight:600; color:var(--ink); width:36px; text-align:right; flex-shrink:0; }
+.milestone-list { display:flex; flex-direction:column; gap:12px; }
+.milestone {
+  display:flex; align-items:flex-start; gap:14px;
+  padding:14px 16px; background:var(--bg);
+  border-radius:var(--r);
+}
+.m-icon { font-size:18px; flex-shrink:0; }
+.m-text { font-size:13px; color:var(--mid); line-height:1.55; }
+.m-text strong { display:block; color:var(--ink); margin-bottom:2px; font-size:13.5px; }
+
+/* ── FINANCIALS ──────────────────────────────── */
+.fin-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:18px; margin-top:40px;
+}
+.fin-card {
+  background:var(--card); border:1px solid var(--rule);
+  border-radius:var(--r-lg); padding:26px 22px; text-align:center;
+}
+.fin-year {
+  font-size:11px; font-weight:600; text-transform:uppercase;
+  letter-spacing:1px; color:var(--soft); margin-bottom:10px;
+}
+.fin-rev {
+  font-family:'DM Serif Display',serif;
+  font-size:32px; color:var(--ink); letter-spacing:-1px;
+}
+.fin-rev.teal { color:var(--teal); }
+.fin-sub { font-size:12px; color:var(--soft); margin-top:6px; }
+.fin-arr {
+  margin-top:10px; padding-top:10px;
+  border-top:1px solid var(--rule);
+  font-size:12px; color:var(--mid);
+}
+.fin-arr strong { color:var(--ink); }
+
+/* ── CTA ─────────────────────────────────────── */
+.cta-section {
+  background: var(--navy);
+  background-image: radial-gradient(ellipse at 50% 60%, rgba(0,196,180,0.12) 0%, transparent 65%);
+  padding:96px 6%; text-align:center;
+}
+.cta-big {
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(30px,4.5vw,48px);
+  color:white; margin-bottom:14px; letter-spacing:-0.5px;
+}
+.cta-sub {
+  font-size:16px; color:rgba(255,255,255,0.5);
+  max-width:440px; margin:0 auto 40px;
+}
+.cta-acts {
+  display:flex; gap:14px; justify-content:center;
+  flex-wrap:wrap; margin-bottom:40px;
+}
+.cta-info {
+  font-size:14px; color:rgba(255,255,255,0.38);
+}
+.cta-info a { color:var(--teal); text-decoration:none; }
+
+/* ── FOOTER ──────────────────────────────────── */
+.footer {
+  background:var(--navy-dark);
+  padding:20px 6%;
+  display:flex; align-items:center; justify-content:space-between; gap:20px;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+.footer-brand { font-family:'DM Serif Display',serif; font-size:15px; color:rgba(255,255,255,0.45); }
+.footer-note { font-size:11px; color:rgba(255,255,255,0.2); text-align:right; }
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media(max-width:900px) {
+  .nav-links a:not(.nav-cta) { display:none; }
+  .problem-grid { grid-template-columns:1fr; }
+  .cap-grid { grid-template-columns:1fr 1fr; }
+  .market-layout { grid-template-columns:1fr; }
+  .vision-grid { grid-template-columns:1fr; }
+  .vision-arrow { padding:16px 0; transform:rotate(90deg); }
+  .moat-grid { grid-template-columns:1fr 1fr; }
+  .team-main { grid-template-columns:1fr 1fr; }
+  .team-support { grid-template-columns:1fr 1fr; }
+  .raise-layout { grid-template-columns:1fr; }
+  .fin-grid { grid-template-columns:1fr; }
+  .kpi-inner { grid-template-columns:1fr 1fr; }
+  .kpi:nth-child(2) { border-right:none; }
+  .kpi:nth-child(3) { border-right:1px solid rgba(255,255,255,0.06); }
+  .footer { flex-direction:column; text-align:center; }
+}
+@media(max-width:560px) {
+  .hero { padding:60px 5% 56px; }
+  .s { padding:60px 5%; }
+  .cap-grid { grid-template-columns:1fr; }
+  .moat-grid { grid-template-columns:1fr; }
+  .market-stats { grid-template-columns:1fr 1fr; }
+  .team-main { grid-template-columns:1fr 1fr; }
+  .team-support { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-brand">
+    <img class="nav-logo" src="logo.svg" alt="Maximizer AI logo">
+    <span class="nav-name">Maximizer AI</span>
+  </div>
+  <div class="nav-links">
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#traction">Traction</a>
+    <a href="#market">Market</a>
+    <a href="#team">Team</a>
+    <a href="#contact" class="nav-cta">Request Data Room →</a>
+  </div>
+</nav>
+
+<main>
+<!-- ── HERO ───────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo" src="logo.svg" alt="Maximizer AI">
+    <div class="badges">
+      <span class="badge"><span class="badge-dot" aria-hidden="true"></span>USA &amp; UK Pilots Live in Production</span>
+      <span class="badge">Pre-Seed · 2026</span>
+      <span class="badge">Ex-Unit 8200 Engineering</span>
+    </div>
+    <h1 class="hero-heading">
+      The Future of Insurance<br>Is <span class="accent">Autonomous.</span><br>The Missing Piece Is Trust.
+    </h1>
+    <p class="hero-sub">
+      Maximizer AI is the industry's first <strong class="text-bright">Active Intelligence Layer</strong> — operating inside the live claims conversation to verify facts, detect contradictions, and guide agents in real time. Not after the payout. During it.
+    </p>
+    <div class="hero-actions">
+      <a href="mailto:cj.rosner@maximizer.ai?subject=Investor%20Inquiry%20–%20Maximizer%20AI" class="btn-primary">Request Data Room</a>
+      <a href="mailto:cj.rosner@maximizer.ai?subject=Schedule%20a%20Call%20–%20Maximizer%20AI" class="btn-ghost">Schedule 20 Minutes</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── KPI STRIP ──────────────────────────────── -->
+<div class="kpi-strip" role="region" aria-label="Key metrics">
+  <div class="kpi-inner">
+    <div class="kpi">
+      <div class="kpi-val teal">2 Live</div>
+      <div class="kpi-label">USA &amp; UK pilots live in production</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val green">↓ Leakage</div>
+      <div class="kpi-label">Fraud &amp; audit KPIs measurably improving</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">$154B</div>
+      <div class="kpi-label">TAM — global AI in insurance by 2034</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val amber">35.7%</div>
+      <div class="kpi-label">CAGR — fastest growing InsurTech category</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROBLEM ────────────────────────────────── -->
+<section class="s white" id="problem">
+  <div class="s-inner">
+    <div class="eyebrow">The Problem</div>
+    <h2 class="s-title">The Most Critical Moment in Insurance<br>Is Completely Unprotected</h2>
+    <p class="s-desc">Billions exit insurance companies daily through fraud, errors, and unchecked data gaps — all inside the live conversation, where no tool currently operates.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-num">$308B</div>
+        <div class="problem-desc">Lost to insurance fraud every year globally. The moment it originates — the live conversation — goes completely unmonitored by every tool on the market.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-num">40–60%</div>
+        <div class="problem-desc">Of claims decisions contain errors, fraud signals, or critical data gaps that go undetected during the live call — when they could still be stopped.</div>
+      </div>
+    </div>
+    <div class="problem-note">
+      <p>"Current tools only analyze calls <strong class="text-bright">after the money is gone.</strong> Nobody protects the live conversation."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOLUTION ───────────────────────────────── -->
+<section class="s alt" id="solution">
+  <div class="s-inner">
+    <div class="eyebrow">The Solution</div>
+    <h2 class="s-title">We Stop Fraud and Errors<br>During the Live Call. Not After.</h2>
+    <p class="s-desc">Maximizer AI is the industry's first Active Intelligence Layer — connecting to telephony, claims systems, and policy data without replacing any of them.</p>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-icon ci-teal" aria-hidden="true">🔍</div>
+        <div class="cap-title">Live Fraud Detection</div>
+        <p class="cap-desc">Flags logical contradictions and inconsistencies as they happen — cross-referencing policy data, behavioral signals, and conversation in real time. Not days later.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon ci-blue" aria-hidden="true">🤝</div>
+        <div class="cap-title">Dynamic Agent Guidance</div>
+        <p class="cap-desc">Prompts agents with the right question at the right moment, backed by confidence scores and business rules — aligned with policy and regulatory guidelines.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon ci-purple" aria-hidden="true">🛡️</div>
+        <div class="cap-title">Decision Integrity Scoring</div>
+        <p class="cap-desc">Per-interaction scores combining data checks, behavioral signals, and policy compliance. Protects honest customers while surfacing suspicious claims with full explainability.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon ci-amber" aria-hidden="true">⚙️</div>
+        <div class="cap-title">Zero Manual Entry</div>
+        <p class="cap-desc">Auto-fills CRM fields, pulls live policy data, and eliminates human error from the workflow — reducing handling time and compliance risk simultaneously.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon ci-green" aria-hidden="true">🔗</div>
+        <div class="cap-title">Zero-Friction Integration</div>
+        <p class="cap-desc">Connects to telephony, claims systems, CRMs, and data lakes as a layer — not a replacement. Fast procurement, minimal IT risk, deployed in weeks.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon ci-red" aria-hidden="true">📋</div>
+        <div class="cap-title">Explainability &amp; Audit Trails</div>
+        <p class="cap-desc">Every alert is traceable to policy clauses, data fields, and conversation excerpts. Built for TCF compliance, regulatory review, and real-world audit demands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRACTION ───────────────────────────────── -->
+<section class="s white" id="traction">
+  <div class="s-inner">
+    <div class="eyebrow">Traction</div>
+    <h2 class="s-title">Already Validated.<br>Already in Production.</h2>
+    <p class="s-desc">Maximizer AI has moved from concept to live deployment with enterprise partners — across two continents, at pre-seed stage.</p>
+    <div class="traction-list">
+      <div class="traction-row">
+        <div class="tr-dot live"></div>
+        <div class="tr-content">
+          <div class="tr-title">2 Live Production Deployments — Israel</div>
+          <div class="tr-detail">Full integration in production. Fraud, leakage, and audit KPIs measurably improving across both deployments.</div>
+        </div>
+        <span class="tr-tag tag-green">Live</span>
+      </div>
+      <div class="traction-row">
+        <div class="tr-dot poc"></div>
+        <div class="tr-content">
+          <div class="tr-title">POC with a US/UK Insurance Group</div>
+          <div class="tr-detail">Active proof-of-concept with one of the world's top insurance data providers. Integration underway.</div>
+        </div>
+        <span class="tr-tag tag-teal">POC</span>
+      </div>
+      <div class="traction-row">
+        <div class="tr-dot nda"></div>
+        <div class="tr-content">
+          <div class="tr-title">NDA Signed — Major UK Insurance Group</div>
+          <div class="tr-detail">Advanced commercial conversations underway with a leading UK insurer. Technical evaluation in final stages.</div>
+        </div>
+        <span class="tr-tag tag-amber">NDA Signed</span>
+      </div>
+      <div class="traction-row">
+        <div class="tr-dot pipeline"></div>
+        <div class="tr-content">
+          <div class="tr-title">US Warm Pipeline — 6 Top-20 Carriers</div>
+          <div class="tr-detail">Six US insurance carriers from the national top-20 list in active pipeline conversations. Progressive-style flows included.</div>
+        </div>
+        <span class="tr-tag tag-blue">US Pipeline</span>
+      </div>
+      <div class="traction-row">
+        <div class="tr-dot insight"></div>
+        <div class="tr-content">
+          <div class="tr-title">16+ Executive Interviews Completed</div>
+          <div class="tr-detail">Engaged VP Claims, Head of SIU, and Innovation Leaders across US and UK markets — deep product-market fit validation.</div>
+        </div>
+        <span class="tr-tag tag-purple">Validated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARKET ──────────────────────────────────── -->
+<section class="s alt" id="market">
+  <div class="s-inner">
+    <div class="eyebrow">Market Opportunity</div>
+    <h2 class="s-title">A $154B Market Growing at 35.7% CAGR</h2>
+    <p class="s-desc">Insurance AI is one of the fastest-growing segments in enterprise software — and in-call claims intelligence is its most underserved, uncontested category.</p>
+    <div class="market-layout">
+      <div>
+        <div class="market-big">
+          <div class="mn">$154B</div>
+          <div class="ml">TAM — Global AI in Insurance by 2034</div>
+        </div>
+        <div class="market-bar-row">
+          <span class="mbt">TAM</span>
+          <div class="mbw"><div class="mbb mbb-tam" style="width:100%"></div></div>
+          <span class="mbv">$154B</span>
+        </div>
+        <div class="market-bar-row">
+          <span class="mbt">SAM</span>
+          <div class="mbw"><div class="mbb mbb-sam" style="width:62%"></div></div>
+          <span class="mbv">~$28B</span>
+        </div>
+        <div class="market-bar-row">
+          <span class="mbt">SOM</span>
+          <div class="mbw"><div class="mbb mbb-som" style="width:18%"></div></div>
+          <span class="mbv">$1.9B</span>
+        </div>
+      </div>
+      <div>
+        <div class="market-stats">
+          <div class="ms-card hl">
+            <div class="msv">35.7%</div>
+            <div class="msl">CAGR through 2034</div>
+          </div>
+          <div class="ms-card">
+            <div class="msv">77%</div>
+            <div class="msl">Insurers already piloting AI solutions</div>
+          </div>
+          <div class="ms-card">
+            <div class="msv">$1.9B</div>
+            <div class="msl">SOM addressable within 5 years</div>
+          </div>
+          <div class="ms-card">
+            <div class="msv">$308B</div>
+            <div class="msl">Annual global insurance fraud loss</div>
+          </div>
+        </div>
+        <div class="market-note">
+          <p>The shift from post-call analytics to <strong>real-time, in-call intelligence</strong> is the next generation of claims technology. Maximizer AI is the first and only company operating in this category — and the structural lead is widening.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VISION ──────────────────────────────────── -->
+<section class="s dark" id="vision">
+  <div class="s-inner">
+    <div class="eyebrow">Vision</div>
+    <h2 class="s-title light">From Active Intelligence<br>to Full Autonomy</h2>
+    <p class="s-desc light">The pre-seed investment funds the bridge from real-time intelligence to fully autonomous claims operations. Series A readiness within 18 months.</p>
+    <div class="vision-grid">
+      <div class="vision-card today">
+        <div class="v-label">Today — 2026</div>
+        <div class="v-title">Active Intelligence Layer</div>
+        <ul class="v-list">
+          <li>AI operates during the live call in real time</li>
+          <li>Verifies logic, detects contradictions, flags fraud signals</li>
+          <li>Guides agents with contextual prompts and confidence scores</li>
+          <li>Auto-fills CRM and eliminates manual entry errors</li>
+          <li>Full audit trail built for compliance and regulatory review</li>
+        </ul>
+      </div>
+      <div class="vision-arrow">→</div>
+      <div class="vision-card future">
+        <div class="v-label">2027 — Full Autonomy</div>
+        <div class="v-title">End-to-End Autonomous Claims</div>
+        <ul class="v-list">
+          <li>Fully automated claims intake through to settlement</li>
+          <li>Fraud prevention embedded at every decision node</li>
+          <li>Compliance and regulation built into every workflow</li>
+          <li>Customer experience optimized in real time</li>
+          <li>Zero-touch handling for routine, low-risk claim types</li>
+        </ul>
+      </div>
+    </div>
+    <p class="vision-foot">The window to lead this category is open now — and closing fast.</p>
+  </div>
+</section>
+
+<!-- ── MOATS ───────────────────────────────────── -->
+<section class="s white">
+  <div class="s-inner">
+    <div class="eyebrow">Why Maximizer Wins</div>
+    <h2 class="s-title">Three Moats Competitors Cannot Cross</h2>
+    <p class="s-desc">Built from first principles for regulated, enterprise insurance markets — not retrofitted from generic AI tooling.</p>
+    <div class="moat-grid">
+      <div class="moat-card">
+        <span class="moat-icon" aria-hidden="true">⏱️</span>
+        <div class="moat-title">Real-Time Beats Post-Call Every Time</div>
+        <p class="moat-desc">Every competitor in fraud detection analyzes after the call. We operate during it. That's not a feature difference — it's a structural category advantage that changes what's possible.</p>
+      </div>
+      <div class="moat-card">
+        <span class="moat-icon" aria-hidden="true">🏗️</span>
+        <div class="moat-title">Layer Architecture — Zero Replacement Risk</div>
+        <p class="moat-desc">Connects to existing telephony, claims, CRM, and policy systems without replacing any of them. Procurement is fast, IT risk is minimal, and deployment time is weeks, not months.</p>
+      </div>
+      <div class="moat-card">
+        <span class="moat-icon" aria-hidden="true">⚖️</span>
+        <div class="moat-title">Compliance by Design</div>
+        <p class="moat-desc">TCF, GDPR, and regulatory explainability were architected in from day one — not added later. Every alert traces to policy clauses. Regulators and auditors can read, act on, and present the outputs in any review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEAM ────────────────────────────────────── -->
+<section class="s alt" id="team">
+  <div class="s-inner">
+    <div class="eyebrow">Team</div>
+    <h2 class="s-title">Ex-Unit 8200 Engineers. 30+ Years Insurance Expertise. One Team.</h2>
+    <p class="s-desc">Military-grade intelligence engineering meets three decades of real-world claims operations. A founding team built from the exact intersection regulators, carriers, and enterprise buyers trust.</p>
+    <div class="team-main">
+      <div class="team-card">
+        <div class="avatar">SA</div>
+        <div class="tm-name">Samuel Azran</div>
+        <div class="tm-role">CEO &amp; CTO</div>
+        <div class="tm-bio">Data Scientist &amp; AI expert. Leads product architecture and technical vision behind the Active Intelligence Layer.</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">CJ</div>
+        <div class="tm-name">CJ Rosner</div>
+        <div class="tm-role">CPO &amp; Co-Founder</div>
+        <div class="tm-bio">Serial entrepreneur. Ex-Unit 8200. Drives product strategy, GTM execution, and investor relations.</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">IA</div>
+        <div class="tm-name">Itzhak Azran</div>
+        <div class="tm-role">COO</div>
+        <div class="tm-bio">Veteran entrepreneur and operator. Leads international business development and strategic commercial relationships across EU and MENA markets.</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">KM</div>
+        <div class="tm-name">Kfir Moyal</div>
+        <div class="tm-role">Chairman</div>
+        <div class="tm-bio">CEO of BIScience. Founding Partner, Cyhawk Ventures. Serial venture builder with deep enterprise networks across US and EU insurance markets.</div>
+      </div>
+    </div>
+    <div class="team-support">
+      <div class="team-card">
+        <div class="avatar sec">MW</div>
+        <div class="tm-name">Matan Wiesner</div>
+        <div class="tm-role">Tech Lead</div>
+        <div class="tm-bio">Ex-Unit 8200, Ex-Google. Core engineering and infrastructure architecture.</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar sec">CC</div>
+        <div class="tm-name">Chaim Coutts</div>
+        <div class="tm-role">Insurance Strategy</div>
+        <div class="tm-bio">Global insurance expert. US, EU, and international market strategy and distribution channels.</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar sec">TB</div>
+        <div class="tm-name">Thomas Brosnan</div>
+        <div class="tm-role">Insurance Strategy</div>
+        <div class="tm-bio">Insurance Fraud Prevention Expert. 30+ years industry experience across US and international markets.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINANCIALS ─────────────────────────────── -->
+<section class="s white" id="financials">
+  <div class="s-inner">
+    <div class="eyebrow">Financial Trajectory</div>
+    <h2 class="s-title">Revenue Model &amp; Growth Path</h2>
+    <p class="s-desc">Platform SaaS with enterprise contract floors and usage-based components. Gross margins expand rapidly as the platform scales across existing integrations.</p>
+    <div class="fin-grid">
+      <div class="fin-card">
+        <div class="fin-year">FY 2025 — Design Partners</div>
+        <div class="fin-rev">$60K</div>
+        <div class="fin-sub">Revenue · Initial Design Partners</div>
+        <div class="fin-arr"><strong>$60K</strong> ARR at close</div>
+      </div>
+      <div class="fin-card">
+        <div class="fin-year">FY 2026 — Pre-Seed Deploy</div>
+        <div class="fin-rev teal">$1.17M</div>
+        <div class="fin-sub">Revenue · US + UK Market Entry</div>
+        <div class="fin-arr"><strong>$2.4M</strong> ARR at close</div>
+      </div>
+      <div class="fin-card">
+        <div class="fin-year">FY 2027 — Series A Scale</div>
+        <div class="fin-rev">$10.72M</div>
+        <div class="fin-sub">Revenue · Full Enterprise Platform</div>
+        <div class="fin-arr"><strong>$15.9M</strong> ARR at close</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RAISE ──────────────────────────────────── -->
+<section class="s alt" id="raise">
+  <div class="s-inner">
+    <div class="eyebrow">The Raise</div>
+    <h2 class="s-title">Pre-Seed Round · 2026</h2>
+    <p class="s-desc">Accelerating US market entry, converting active POCs to contracts, and scaling engineering — with Series A readiness within 18 months.</p>
+    <div class="raise-layout">
+      <div class="raise-card">
+        <h3>Use of Funds</h3>
+        <div class="fund-list">
+          <div class="fund-item">
+            <span class="fund-name">Engineering &amp; Product</span>
+            <div class="fund-bar-wrap"><div class="fund-bar-fill" style="width:40%"></div></div>
+            <span class="fund-pct">40%</span>
+          </div>
+          <div class="fund-item">
+            <span class="fund-name">Sales &amp; US Market Entry</span>
+            <div class="fund-bar-wrap"><div class="fund-bar-fill" style="width:30%"></div></div>
+            <span class="fund-pct">30%</span>
+          </div>
+          <div class="fund-item">
+            <span class="fund-name">Compliance Infrastructure</span>
+            <div class="fund-bar-wrap"><div class="fund-bar-fill" style="width:20%"></div></div>
+            <span class="fund-pct">20%</span>
+          </div>
+          <div class="fund-item">
+            <span class="fund-name">Operations &amp; Runway</span>
+            <div class="fund-bar-wrap"><div class="fund-bar-fill" style="width:10%"></div></div>
+            <span class="fund-pct">10%</span>
+          </div>
+        </div>
+      </div>
+      <div class="raise-card">
+        <h3>Key Milestones with This Round</h3>
+        <div class="milestone-list">
+          <div class="milestone">
+            <span class="m-icon" aria-hidden="true">🇺🇸</span>
+            <div class="m-text"><strong>US Market Entry</strong>First enterprise contract signed with a top-20 US carrier</div>
+          </div>
+          <div class="milestone">
+            <span class="m-icon" aria-hidden="true">🔬</span>
+            <div class="m-text"><strong>Convert Active POCs to Contracts</strong>Close the US/UK POC with the global insurance data provider and the UK NDA partner into signed ARR</div>
+          </div>
+          <div class="milestone">
+            <span class="m-icon" aria-hidden="true">⚙️</span>
+            <div class="m-text"><strong>Platform Scale</strong>Multi-tenant infrastructure, enterprise-grade integrations</div>
+          </div>
+          <div class="milestone">
+            <span class="m-icon" aria-hidden="true">📈</span>
+            <div class="m-text"><strong>Series A Readiness</strong>$2M+ ARR, 5+ enterprise contracts, 18-month runway to Series A</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────── -->
+<section class="cta-section" id="contact">
+  <h2 class="cta-big">20 minutes is all we need.</h2>
+  <p class="cta-sub">We're building the trust layer that makes autonomous insurance possible. If you're investing in AI infrastructure for regulated markets, the conversation starts here.</p>
+  <div class="cta-acts">
+    <a href="mailto:cj.rosner@maximizer.ai?subject=Investor%20Inquiry%20–%20Maximizer%20AI" class="btn-primary">Request Data Room</a>
+    <a href="mailto:cj.rosner@maximizer.ai?subject=Schedule%20a%20Call%20–%20Maximizer%20AI" class="btn-ghost">Schedule a Call</a>
+  </div>
+  <div class="cta-info">
+    <a href="mailto:cj.rosner@maximizer.ai">cj.rosner@maximizer.ai</a>
+    &nbsp;·&nbsp; maximizer.ai &nbsp;·&nbsp; Pre-Seed · 2026
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-brand" style="display:flex;align-items:center;gap:10px;">
+    <img src="logo.svg" alt="" aria-hidden="true" style="height:22px;width:auto;opacity:0.5;">
+    <span>Maximizer AI</span>
+  </div>
+  <div class="footer-note">Confidential — for accredited investors only. Not an offer of securities.</div>
+</footer>
+
+</body>
+</html>
