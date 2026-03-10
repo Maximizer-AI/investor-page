@@ -452,12 +452,15 @@ body {
 }
 .team-card:hover { box-shadow:0 6px 28px rgba(0,0,0,0.07); }
 .avatar {
-  width:52px; height:52px; border-radius:12px;
+  width:64px; height:64px; border-radius:14px;
   background:var(--navy); color:white;
-  font-family:'DM Serif Display',serif; font-size:17px;
+  font-family:'DM Serif Display',serif; font-size:18px;
   display:flex; align-items:center; justify-content:center;
-  margin:0 auto 14px;
+  margin:0 auto 16px; overflow:hidden; flex-shrink:0;
 }
+/* Photo support: <img> fills avatar; .av-fb shows initials as fallback */
+.avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+.av-fb { display:none; align-items:center; justify-content:center; width:100%; height:100%; }
 .avatar.sec { background: var(--avatar-sec); }
 .tm-name { font-size:14px; font-weight:600; color:var(--ink); margin-bottom:4px; }
 .tm-role {
@@ -465,6 +468,15 @@ body {
   text-transform:uppercase; letter-spacing:0.5px; margin-bottom:9px;
 }
 .tm-bio { font-size:12px; color:var(--soft); line-height:1.55; }
+/* LinkedIn link pill */
+.tm-li {
+  display:inline-flex; align-items:center; gap:5px;
+  margin-top:12px; font-size:11px; font-weight:500; color:var(--soft);
+  text-decoration:none; border:1px solid var(--rule);
+  border-radius:20px; padding:4px 10px;
+  transition:color 0.18s, border-color 0.18s, background 0.18s;
+}
+.tm-li:hover { color:#0a66c2; border-color:#0a66c2; background:rgba(10,102,194,0.05); }
 
 /* ── RAISE ───────────────────────────────────── */
 .raise-layout {
@@ -885,48 +897,90 @@ body {
     <p class="s-desc">Military-grade intelligence engineering meets three decades of real-world claims operations. A founding team built from the exact intersection regulators, carriers, and enterprise buyers trust.</p>
     <div class="team-main">
       <div class="team-card">
-        <div class="avatar">SA</div>
+        <div class="avatar">
+          SA
+        </div>
         <div class="tm-name">Samuel Azran</div>
         <div class="tm-role">CEO &amp; CTO</div>
         <div class="tm-bio">Data Scientist &amp; AI expert. Leads product architecture and technical vision behind the Active Intelligence Layer.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/samuelazran/" target="_blank" rel="noopener noreferrer" aria-label="Samuel Azran on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
-        <div class="avatar">CJ</div>
+        <div class="avatar">
+          CJ
+        </div>
         <div class="tm-name">CJ Rosner</div>
         <div class="tm-role">CPO &amp; Co-Founder</div>
         <div class="tm-bio">Serial entrepreneur. Ex-Unit 8200. Drives product strategy, GTM execution, and investor relations.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/cjrosner/" target="_blank" rel="noopener noreferrer" aria-label="CJ Rosner on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
-        <div class="avatar">IA</div>
-        <div class="tm-name">Itzhak Azran</div>
+        <div class="avatar">
+          YA
+        </div>
+        <div class="tm-name">Yitzhak Azran</div>
         <div class="tm-role">COO</div>
         <div class="tm-bio">Veteran entrepreneur and operator. Leads international business development and strategic commercial relationships across EU and MENA markets.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/azrany/" target="_blank" rel="noopener noreferrer" aria-label="Yitzhak Azran on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
-        <div class="avatar">KM</div>
-        <div class="tm-name">Kfir Moyal</div>
+        <div class="avatar">
+          KM
+        </div>
+        <div class="tm-name">Kfir Hod Moyal</div>
         <div class="tm-role">Chairman</div>
         <div class="tm-bio">CEO of BIScience. Founding Partner, Cyhawk Ventures. Serial venture builder with deep enterprise networks across US and EU insurance markets.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/kfir-hod-moyal-067853b/" target="_blank" rel="noopener noreferrer" aria-label="Kfir Hod Moyal on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
     <div class="team-support">
       <div class="team-card">
-        <div class="avatar sec">MW</div>
+        <div class="avatar sec">
+          MW
+        </div>
         <div class="tm-name">Matan Wiesner</div>
         <div class="tm-role">Tech Lead</div>
         <div class="tm-bio">Ex-Unit 8200, Ex-Google. Core engineering and infrastructure architecture.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/matan-wiesner-21163312b/" target="_blank" rel="noopener noreferrer" aria-label="Matan Wiesner on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
-        <div class="avatar sec">CC</div>
+        <div class="avatar sec">
+          CC
+        </div>
         <div class="tm-name">Chaim Coutts</div>
         <div class="tm-role">Insurance Strategy</div>
         <div class="tm-bio">Global insurance expert. US, EU, and international market strategy and distribution channels.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/chaim-coutts-747a12157/" target="_blank" rel="noopener noreferrer" aria-label="Chaim Coutts on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
       <div class="team-card">
-        <div class="avatar sec">TB</div>
+        <div class="avatar sec">
+          TB
+        </div>
         <div class="tm-name">Thomas Brosnan</div>
         <div class="tm-role">Insurance Strategy</div>
         <div class="tm-bio">Insurance Fraud Prevention Expert. 30+ years industry experience across US and international markets.</div>
+        <a class="tm-li" href="https://www.linkedin.com/in/thomas-brosnan-70bb655a/" target="_blank" rel="noopener noreferrer" aria-label="Thomas Brosnan on LinkedIn">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
   </div>
